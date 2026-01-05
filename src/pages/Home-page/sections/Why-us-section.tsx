@@ -3,8 +3,8 @@ import { FaUsers, FaHandshake, FaClipboardCheck, FaGavel, FaBullseye } from 'rea
 
 interface Feature {
   title: string;
-  description: string;
-  icon: JSX.Element;
+  description: string; 
+  icon: any
 }
 
 const features: Feature[] = [
