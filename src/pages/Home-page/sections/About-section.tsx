@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import aboutImg from '/src/assets/heroSlide.webp'
 
 const AboutSection: React.FC = () => {
   return (
@@ -43,7 +44,7 @@ const AboutSection: React.FC = () => {
         <div className="relative">
           <div className="w-full h-[420px] rounded-2xl overflow-hidden shadow-lg"> 
             <img
-              src="/src/assets/heroSlide.webp"
+              src={aboutImg}
               alt="Stedi-City Consulting"
               className="w-full h-full object-cover"
             />

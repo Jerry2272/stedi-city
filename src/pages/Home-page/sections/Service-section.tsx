@@ -1,5 +1,12 @@
 import React from 'react';
 
+import img1 from '/src/assets/realEstate.webp'
+import img2 from '/src/assets/BusinessConsulting.jpeg'
+import img3 from '/src/assets/agricultureFood.webp'
+import img4 from '/src/assets/logisticsSupply.webp'
+import img5 from '/src/assets/manufacturingProduction.webp'
+import img6 from '/src/assets/cleaningEnvironmental.webp'
+
 interface Service {
   title: string;
   location?: string;
@@ -12,37 +19,37 @@ const services: Service[] = [
     title: 'Real Estate & Construction',
     location: 'Nationwide',
     description: 'Building construction, construction works, real estate management, general contractor services, and supply of building materials.',
-    img: '/src/assets/realEstate.webp',
+    img: img1,
   },
   {
     title: 'Business & Consulting',
     location: 'Global',
     description: 'Consultation, sales representative, and commission agency services to help your business grow.',
-    img: '/src/assets/BusinessConsulting.jpeg',
+    img: img2,
   },
   {
     title: 'Agriculture & Food',
     location: 'Rural & Urban',
     description: 'Agricultural development management and food processing services for sustainable growth.',
-    img: '/src/assets/agricultureFood.webp',
+    img: img3,
   },
   {
     title: 'Logistics & Supply',
     location: 'Nationwide',
     description: 'General logistics services, merchandise, and supply of goods across sectors.',
-    img: '/src/assets/logisticsSupply.webp',
+    img: img4,
   },
   {
     title: 'Manufacturing & Production',
     location: 'Industrial Zones',
     description: 'Manufacturing services to support business production and industrial needs.',
-    img: '/src/assets/manufacturingProduction.webp',
+    img: img5,
   },
   {
     title: 'Cleaning & Environmental',
     location: 'All Locations',
     description: 'Professional cleaning and environmental services for a safe and healthy environment.',
-    img: '/src/assets/cleaningEnvironmental.webp',
+    img: img6,
   },
 ];
 
