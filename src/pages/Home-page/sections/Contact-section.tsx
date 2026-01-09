@@ -17,9 +17,7 @@ const ContactSection: React.FC = () => {
             <p><strong>Phone:</strong> +49 30 901820</p>
             <p><strong>Email:</strong> custom_email@domain.com</p>
             <p><strong>Address:</strong></p>
-            <p>Herrn Eberhard Wellhausen</p>
-            <p>Wittekindshof</p>
-            <p>Schulstrasse 4, 32547 Bad Oyenhausen, GERMANY</p>
+            <p>No 3 Rukpakwulusi,By Eliozu Flyover Eliozu Obio-Akpor LGA Rivers state. Port Harcourt, Nigeria</p> 
           </div>
         </div>
 

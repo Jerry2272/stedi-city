@@ -22,7 +22,7 @@ export const HeroSection: React.FC = () => {
         <div key={i}>
           <section
             id="home"
-            className="lg:h-screen h-[85vh] flex items-end pb-14 md:pl-25 pl-4"
+            className="h-screen  flex items-end pb-14 md:pl-25 pl-4"
             style={{
               backgroundImage: `
                 linear-gradient( rgba(15, 42, 68,0.49) ,rgba(15, 42, 68, 0.80)),

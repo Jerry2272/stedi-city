@@ -30,7 +30,7 @@ const MetricsSection: React.FC = () => {
               className="flex flex-col items-center text-center border border-[#0F2A44] rounded-2xl py-10 px-4 hover:bg-white/10 transition transform hover:scale-105"
             >
               <div className="text-4xl text-[#0F2A44] mb-4">{metric.icon}</div>
-              <h4 className="lg:text-4xl text-2xl  font-bold  mb-2">{metric.value}</h4>
+              <h4 className="lg:text-4xl text-xl  font-bold  mb-2">{metric.value}</h4>
               <p className="/80 text-sm md:text-base">{metric.label}</p>
             </div>
           ))}
