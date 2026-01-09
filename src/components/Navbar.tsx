@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import logo from  '../assets/stedi-city-logo.webp'
+import { Link } from 'react-router-dom';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,23 +19,25 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className="bg-[#0D3B66] text-white fixed w-full z-50 shadow-md">
-      <div className="max-w-7xl mx-auto px-6 lg:px-20 flex justify-between items-center h-16">
+    <nav className="bg-[#f5f5f5] h-25 items-center justify-between   fixed w-full z-50">
+      <div className="max-w-7xl mx-auto px-4 lg:px-14 flex justify-between items-center ">
         {/* Logo */}
         <div className="text-2xl font-bold">
-          Stedi-City
+        <a href="/">
+        <img src={logo} className='w-24 h-24 ' alt="" />
+        </a>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden lg:flex justify-center items-center space-x-8">
           {navLinks.map((link, idx) => (
-            <li key={idx}>
-              <a
-                href={link.href}
-                className="hover:text-blue-400 transition font-medium"
+            <li key={idx} className={`${link.name === 'Contact' ? 'border-2 border-[#0F2A44] rounded-[45px] px-10 py-1 text-[#0F2A44]' : 'px-3'}`}>
+              <Link
+                to={link.href}
+                className="transition font-medium text-[#0F2A44] text-lg"
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

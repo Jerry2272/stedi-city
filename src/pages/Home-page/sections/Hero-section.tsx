@@ -22,10 +22,10 @@ export const HeroSection: React.FC = () => {
         <div key={i}>
           <section
             id="home"
-            className="lg:h-[100vh] h-[85vh] flex items-center md:pl-[100px] pl-[16px]"
+            className="lg:h-screen h-[85vh] flex items-end pb-14 md:pl-25 pl-4"
             style={{
               backgroundImage: `
-                linear-gradient(rgba(26,26,26,0.75), rgba(26,26,26,0.75)),
+                linear-gradient( rgba(15, 42, 68,0.49) ,rgba(15, 42, 68, 0.80)),
                 url(${slide.img})
               `,
               backgroundRepeat: 'no-repeat',
@@ -33,34 +33,35 @@ export const HeroSection: React.FC = () => {
               backgroundPosition: 'center',
             }}
           >
-            <div className="flex flex-col lg:w-[700px] text-left">
+            <div className="flex flex-col lg:w-175 lg:text-left text-center">
               
-              <span className="text-[14px] uppercase tracking-widest text-gray-300 mb-3 font-spaceGrotesk">
+              <span className="text-[14px] uppercase tracking-widest text-white mb-3 font-spaceGrotesk">
                 {slide.span}
               </span>
 
-              <h1 className="lg:text-[56px] text-[40px] font-[600] text-white font-spaceGrotesk lg:leading-[68px] leading-[50px] mb-4">
+              <h1 className="lg:text-[56px]  text-[40px] font-semibold text-white font-spaceGrotesk lg:leading-17 leading-12.5 mb-4">
                 {slide.title}
               </h1>
 
-              <p className="lg:text-[20px] text-[16px] text-gray-200 font-manRope mb-10 max-w-[620px]">
+              <p className="lg:text-[20px] text-[16px] text-white/85 font-manRope mb-10 max-w-155">
                 {slide.description}
               </p>
 
-              <div className="flex gap-6">
+              <div className="flex lg:flex-row flex-col gap-6 p-4">
+                  <Link
+                  to="/contact"
+                  className="border border-white text-white text-center text-[16px] font-bold font-manRope  py-3 rounded-[46px] px-10"
+                >
+                  Our Service
+                </Link>
                 <a
                   href="#service"
-                  className="bg-white text-navColor text-[16px] font-[500] font-manRope px-6 py-3 rounded-lg"
+                  className="bg-white text-center text-[#0F2A44] text-[16px] font-bold font-manRope px-6 py-3 rounded-[46px]"
                 >
-                  Our Services
+                 Request a Consultation
                 </a>
 
-                <Link
-                  to="/contact"
-                  className="bg-[#0D3B66] text-white text-[16px] font-[500] font-manRope px-6 py-3 rounded-lg"
-                >
-                  Contact Us
-                </Link>
+              
               </div>
 
             </div>
